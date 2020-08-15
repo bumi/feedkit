@@ -51,6 +51,7 @@ module Feedkit
         value[:media_width] = @entry.media_width if @entry.try(:media_width)
         value[:media_height] = @entry.media_height if @entry.try(:media_height)
         value[:public_id_alt] = public_id_alt if public_id_alt
+        value[:lnurl] = @entry.lnurl if @entry.try(:lnurl)
         value
       end
 
